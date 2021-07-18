@@ -32,11 +32,11 @@ The method needs to be named "getProfiles", and it needs to accept filtering opt
 
 ***Example Template:***
 
-sample record: { title:"TomSawyer", author:"Mark Twain"} <br/>
-  <p>let template = (record) => {</p>
-  <p>&nbsp;&nbsp;&lt;h2&gt;${record.title}&lt;/h2&gt;</p>
-  <p>&nbsp;&nbsp;&lt;div&gt;by: ${record.author}&lt;/div&gt;`</p>
-<p>}</p>
+sample record: { title:"TomSawyer", author:"Mark Twain"}
+  <br />let template = (record) => {
+  <br />&nbsp;&nbsp;\`&lt;h2&gt;${record.title}&lt;/h2&gt;
+  <br />&nbsp;&nbsp;&lt;div&gt;by: ${record.author}&lt;/div&gt;\`
+<br />}
 
 When you see records and properties as shown above, they will in many ways be handled similar to how React handles state.
 
