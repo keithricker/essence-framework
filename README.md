@@ -51,7 +51,7 @@ The view's ***execute*** function will go about rendering each record using the 
 <br />}
 <br />In the above example, the View will look for any dom elements matching: ***<data-html="title"***
 And it will add the title's value as it's innerHTML, resulting in:
-<p><i>&lt;div data-html="title"&gt;&lt;h2&gt;Moby Dick&lt;/h2&gt;&gt;&lt;/div&gt;</i></p>
+<p><i>&lt;div data-html="title"&gt;&lt;h2&gt;Moby Dick&lt;/h2&gt;&lt;/div&gt;</i></p>
 
 *Properties passed to the template will be handled similar to how React handles state.*
 
