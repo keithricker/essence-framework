@@ -47,11 +47,11 @@ The view's ***execute*** function will go about rendering each record using the 
 **html:** A simplified helper for inserting html in to the dom. An object of key/value pairs. i.e. 
 <br />{ 
 <br />&nbsp;&nbsp;title: "&lt;h2&gt;Moby Dick&lt;/h2&gt;", 
-<br />&nbsp;&nbsp;image:'&lt;img src="http://wailimage.jpg"&gt;'
+<br />&nbsp;&nbsp;image: '&lt;img src="http://wailimage.jpg"&gt;'
 <br />}
 <br />In the above example, the View will look for any dom elements matching: ***<data-html="title"***
 And it will add the title's value as it's innerHTML, resulting in:
-`<div data-html="title">&lt;h2&gt;Moby Dick&lt;/h2&gt;></div>`
+<br />***&lt;div data-html="title"&gt;&lt;h2&gt;Moby Dick&lt;/h2&gt;&gt;&lt;/div&gt;***
 
 *Properties passed to the template will be handled similar to how React handles state.*
 
