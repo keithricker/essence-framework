@@ -45,6 +45,31 @@ sample record: <i>{ title:"TomSawyer", author:"Mark Twain"}</i><br />
 
 When you see records and properties as shown above, think **state** in react.
 
+#### Similar to React, you can also pass in child components (templates within templates).
+
+Example:
+  <i>
+    <br />let template = (record) => {
+    <br />&nbsp;&nbsp;return \`&lt;h2&gt;${record.title}&lt;/h2&gt;
+    <br />&nbsp;&nbsp;&lt;div&gt;by: ${record.author}&lt;/div&gt;
+    <br />&lt;div&gt;More titles:&lt;div&gt;
+    <br />${more}
+<br />}
+  </i>
+  - *{*
+  -   *title:"TomSawyer", 
+  -   *author:"Mark Twain"
+  -   *more: (child) => {*
+  -     *<ul>*
+  -       *<li>child.titles[0]</li>*
+  -       *<li>child.titles[1]</li>*
+  -       *<li>child.titles[2]</li>*
+  -     *</ul>*
+  -   *}*
+  - *}*
+  <br />
+ 
+
 The view's ***execute*** function will go about rendering each record using the supplied html template and attaching them to the dom. You can also supply it with a callback funciton/hook that it will run in case there are any additional things you want done during excecution. It's "this" is a reference to the View with some limitations.
 
 ### Caching (persistence): 
