@@ -56,17 +56,17 @@ Example:
     <br />${more}
 <br />}
   </i>
-  - *{*
-  -   *title:"TomSawyer", 
-  -   *author:"Mark Twain"
-  -   *more: (child) => {*
-  -     *<ul>*
-  -       *<li>child.titles[0]</li>*
-  -       *<li>child.titles[1]</li>*
-  -       *<li>child.titles[2]</li>*
-  -     *</ul>*
-  -   *}*
-  - *}*
+  <br><i>{
+     title:"TomSawyer, 
+     author:"Mark Twain"
+     more: (child) => {
+       <ul>
+         <li>child.titles[0]</li>
+         <li>child.titles[1]</li>
+         <li>child.titles[2]</li>
+       </ul>
+     }
+   }</i>
   <br />
  
 
