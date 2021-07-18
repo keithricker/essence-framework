@@ -30,7 +30,7 @@ The method needs to be named "getProfiles", and it needs to accept filtering opt
 **The Config Object:** Defines how the records are to be used. It's properties are:
 
   - <strong>parent:</strong> The id of the parent element to attach the records to.
-  - <strong>props:</strong> The fields that will be used (i.e. title, author, image); this property is more descriptive than functional (like a schema), and defines the terms that will be used. Example: ['author', 'image', description']
+  - <strong>props:</strong> The fields that will be used (i.e. title, author, image); this property is more descriptive than functional (like a schema), and defines the terms that will be used. Example: <i>['author', 'image', description']</i>
   - <strong>template:</strong> a function that takes the prop keys and values as an argument and returns an html string. ***Think React component functions/classes, only you return template literals as opposed to JSX.***
 
 ### Example Template:
