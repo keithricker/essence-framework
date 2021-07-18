@@ -45,11 +45,11 @@ The view's ***execute*** function will go about rendering each record using the 
 **Caching (persistence):** The view object has a session object that keeps track of persistence. The Session.save() method (i.e. bookView.session.save), will save whatever parameters are used to produce the given query results; i.e. whatever params are sent to the API, etc. This allows for the app to have memory of whatever the user happened to be viewing last. It uses window's local storage, so it may not work in non-supporting browsers, in incognito mode, or if users have it disabled.
 
 **html:** A simplified helper for inserting html in to the dom. An object of key/value pairs. i.e. 
-{ 
-<br />  title: "&lt;h2&gt;Moby Dick&lt;/h2&gt;", 
-<br />  image:'&lt;img src="http://wailimage.jpg"&gt;'
+<br />{ 
+<br />&nbsp;&nbsp;title: "&lt;h2&gt;Moby Dick&lt;/h2&gt;", 
+<br />&nbsp;&nbsp;image:'&lt;img src="http://wailimage.jpg"&gt;'
 <br />}
-In the above example, the View will look for any dom elements matching: ***<data-html="title"***
+<br />In the above example, the View will look for any dom elements matching: ***<data-html="title"***
 And it will add the title's value as it's innerHTML, resulting in:
 `<div data-html="title">&lt;h2&gt;Moby Dick&lt;/h2&gt;></div>`
 
