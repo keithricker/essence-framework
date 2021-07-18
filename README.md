@@ -25,7 +25,7 @@ The single instance of the framework mostly consists of:
 
 **The Factory:** just needs to be a class with a method that returns an array of records. Each record being an object with key/value pairs representing the data: i.e. { author:"JK Rowling", book: "Harry Potter" } 
 
-The method needs to be named "getProfiles", and it needs to accept filtering options (i.e. { author: "Mark Twain" }) and return records. There is a base Factory class provided by the framework (View.Factory) that has a lot of options, and it is highly recommend this class be extended and modified to suit your puproses.
+The method needs to be named "getProfiles", and it needs to accept filtering options (i.e. { author: "Mark Twain" } returns all books by Mark Twain) and return records. There is a base Factory class provided by the framework (View.Factory) that has a lot of options, and it is highly recommend this class be extended and modified to suit your puproses.
 
 **The Config Object:** Defines how the records are to be used. It's properties are:
 
