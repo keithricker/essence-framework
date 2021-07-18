@@ -31,12 +31,10 @@ The method needs to be named "getProfiles", and it needs to accept filtering opt
 ***- template:*** a function that takes the prop keys and values as an argument and returns an html string
 
 ***Example Template:***
+
 <code>
-//sample record: { title:"TomSawyer", author:"Mark Twain"}
-let template = (record) => {
-  return <h2>${record.title}</h2>
-  <div>by: ${record.author}</div>
-}
+// sample record: { title:"TomSawyer", author:"Mark Twain"}
+let template = (record) => `<h2>${record.title}</h2><div>by: ${record.author}</div>`
 </code>
 
 When you see records and properties as shown above, they will in many ways be handled similar to how React handles state.
