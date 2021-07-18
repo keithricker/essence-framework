@@ -33,7 +33,7 @@ The method needs to be named "getProfiles", and it needs to accept filtering opt
   - <strong>props:</strong> The fields that will be used (i.e. title, author, image); this property is more descriptive than functional (like a schema), and defines the terms that will be used. Example: <i>['author', 'image', description']</i>
   - <strong>template:</strong> a function that takes the prop keys and values as an argument and returns an html string. ***Think React component functions/classes, only you return template literals as opposed to JSX.***
 
-### Example Template:
+#### Example Template:
 
 sample record: <i>{ title:"TomSawyer", author:"Mark Twain"}</i><br />
   <i>
