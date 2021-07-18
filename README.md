@@ -21,7 +21,7 @@ The single instance of the framework mostly consists of:
 ## The View Class: 
 - Arguments: 
 1. A factory class for retreiving the desired records,
-2. Parameters object: key/value pairs (optional). 
+2. Config object: key/value pairs (optional). 
 
 **The Factory:** just needs to be a class with a method that returns an array of records. Each record being an object with key/value pairs representing the data: i.e. { author:"JK Rowling", book: "Harry Potter" } 
 
