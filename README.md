@@ -56,17 +56,19 @@ Example:
     <br />&nbsp;&nbsp;${more}
 <br />}
   </i>
-  <br><i>{
-     title:"TomSawyer, 
-     author:"Mark Twain"
-     more: (child) => {
+  <br>
+  #### And the props we pass in:
+  <i>{
+     title:"TomSawyer,   
+     author:"Mark Twain"  
+     more: (child) => {  
        <ul>
          <li>child.titles[0]</li>
          <li>child.titles[1]</li>
          <li>child.titles[2]</li>
        </ul>
-     }
-   }</i>
+     }  
+   }</i>  
   <br />
  
 
