@@ -28,9 +28,11 @@ Arguments:
 The method needs to be named "getProfiles", and it needs to accept filtering options (i.e. { author: "Mark Twain" }) and return records. There is a base Factory class provided by the framework (View.Factory) that has a lot of options, and it is highly recommend this class be extended and modified to suit your puproses.
 
 **The Config Object:** Defines how the records are to be used. It's properties are:
-***- parent:*** The id of the parent element to attach the records to.
-***- props:*** The fields that will be used (i.e. title, author, image); this property is more descriptive than functional (like a schema), and defines the terms that will be used.
-***- template:*** a function that takes the prop keys and values as an argument and returns an html string
+<ul>
+  <li>***- parent:*** The id of the parent element to attach the records to.</li>
+  <li>***- props:*** The fields that will be used (i.e. title, author, image); this property is more descriptive than functional (like a schema), and defines the terms that will be used.</li>
+  <li>***- template:*** a function that takes the prop keys and values as an argument and returns an html string</li>
+</ul>
 
 ***Example Template:***
 
