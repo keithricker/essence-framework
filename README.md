@@ -34,7 +34,7 @@ The method needs to be named "getProfiles", and it needs to accept filtering opt
 
 <code>
 // sample record: { title:"TomSawyer", author:"Mark Twain"}
-let template = (record) => `<h2>$\{record.title\}</h2><div>by: ${record.author}</div>`
+let template = (record) => `<h2>${record.title}</h2><div>by: ${record.author}</div>`
 </code>
 
 When you see records and properties as shown above, they will in many ways be handled similar to how React handles state.
@@ -50,7 +50,7 @@ The view's ***execute*** function will go about rendering each record using the 
 }
 In the above example, the View will look for any dom elements matching: ***<data-html="title"***
 And it will add the title's value as it's innerHTML, resulting in:
-`<div data-html="title"><h2>Moby Dick</h2></div>`
+`<div data-html="title">&lt;h2&gt;Moby Dick&lt;/h2&gt;></div>`
 
 *Another example where properties passed to the template will be handled similar to how React handles state.*
 
