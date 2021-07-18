@@ -52,8 +52,8 @@ Example:
     <br />let template = (record) => {
     <br />&nbsp;&nbsp;return \`&lt;h2&gt;${record.title}&lt;/h2&gt;
     <br />&nbsp;&nbsp;&lt;div&gt;by: ${record.author}&lt;/div&gt;
-    <br />&lt;div&gt;More titles:&lt;div&gt;
-    <br />${more}
+    <br />&lt;div&gt;  More titles:&lt;div&gt;
+    <br />  ${more}
 <br />}
   </i>
   <br><i>{
