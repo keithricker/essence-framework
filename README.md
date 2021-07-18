@@ -53,7 +53,7 @@ The view's ***execute*** function will go about rendering each record using the 
 And it will add the title's value as it's innerHTML, resulting in:
 <p><i>&lt;div data-html="title"&gt;&lt;h2&gt;Moby Dick&lt;/h2&gt;&lt;/div&gt;</i></p>
 
-*Properties passed to the template will be handled similar to how React handles state.*
+**Properties passed to the template will be handled similar to how React handles state.**
 
 Since the View is mainly concerned with displaying lists (sets) of data, this just provides a hanndy helper for working on other dynamic elements on the page outside of the list views.
 
