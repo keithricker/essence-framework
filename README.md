@@ -32,7 +32,6 @@ The method needs to be named "getProfiles", and it needs to accept filtering opt
 
 ***Example Template:*** 
 `// sample record: { title:"TomSawyer", author:"Mark Twain"}
-
 let template = (record) => {
   return <h2>${record.title}</h2>
   <div>by: ${record.author}</div>
