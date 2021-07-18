@@ -55,7 +55,7 @@ And it will add the title's value as it's innerHTML, resulting in:
 
 **Properties passed to the template will be handled similar to how React handles state.**
 
-Since the View is mainly concerned with displaying lists (sets) of data, this just provides a hanndy helper for working on other dynamic elements on the page outside of the list views.
+Since the View is mainly concerned with displaying lists (sets) of data, this just provides a convenient helper for working on other dynamic elements on the page outside of the list views.
 
 **Animation:** By default, the View will do a basic fadein/fadeout on the parent element when loading new child elements (records). You can override this behavior by supplying an animation configuration object with the following params: 
 - style (default "opacity")
