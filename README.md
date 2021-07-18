@@ -19,7 +19,7 @@ The single instance of the framework mostly consists of:
 
 
 **The View Class:** 
-Arguments: 
+- Arguments: 
 1. A factory class for retreiving the desired records,
 2. Parameters object: key/value pairs (optional). 
 
@@ -35,11 +35,13 @@ The method needs to be named "getProfiles", and it needs to accept filtering opt
 
 ***Example Template:***
 
-sample record: { title:"TomSawyer", author:"Mark Twain"}<br />
-  <br />let template = (record) => {
-  <br />&nbsp;&nbsp;return \`&lt;h2&gt;${record.title}&lt;/h2&gt;
-  <br />&nbsp;&nbsp;&lt;div&gt;by: ${record.author}&lt;/div&gt;\`
+sample record: <i>{ title:"TomSawyer", author:"Mark Twain"}</i><br />
+  <i>
+    <br />let template = (record) => {
+    <br />&nbsp;&nbsp;return \`&lt;h2&gt;${record.title}&lt;/h2&gt;
+    <br />&nbsp;&nbsp;&lt;div&gt;by: ${record.author}&lt;/div&gt;\`
 <br />}
+  </i>
 
 When you see records and properties as shown above, think **state** in react.
 
