@@ -47,8 +47,8 @@ The view's ***execute*** function will go about rendering each record using the 
 **html:** A simplified helper for inserting html in to the dom. An object of key/value pairs. i.e. 
 { 
 <br />  title: "&lt;h2&gt;Moby Dick&lt;/h2&gt;", 
-<br />  image:'<img src="http://wailimage.jpg">'
-}
+<br />  image:'&lt;img src="http://wailimage.jpg"&gt;'
+<br />}
 In the above example, the View will look for any dom elements matching: ***<data-html="title"***
 And it will add the title's value as it's innerHTML, resulting in:
 `<div data-html="title">&lt;h2&gt;Moby Dick&lt;/h2&gt;></div>`
