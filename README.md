@@ -12,7 +12,7 @@ Some key terms:
 - <strong>List:</strong> A set (array) of profiles.
 - <strong>View Factory:</strong> The base class that talks with the API. Used for retreiving records/profiles and passing them to the View. 
 
-The single instance of the framework mostly consists of:
+**A single instance of the framework (mostly) consists of:**
 1) A View (an instance of the View Class)
 2) A Factory (instance of the View Factory. Could also be a custom class that retreives records from an API)
 3) A Config object (Contains all of the options for creating a View)
