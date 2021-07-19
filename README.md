@@ -58,7 +58,7 @@ Example:
 }  
 </i>
 <br />
-  #### And the fields we pass in:
+  #### And the fields we pass in:  
   > <i>let record = {  
      &nbsp;&nbsp;title: "TomSawyer,   
      &nbsp;&nbsp;author: "Mark Twain",    
