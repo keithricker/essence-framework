@@ -1,0 +1,107 @@
+import { View } from "./essense";
+
+const template = {
+  book: {
+    list: (replace = {}) => `<div class="book #bg-white rounded col-sm-4">
+        <div class = "row">
+          <div class = "col-3">
+            <div class="img">
+              <img src="${replace.image_url}" alt="" />
+            </div>
+          </div>
+          <div class = "col-9">
+            <h4 class='title'>${replace.title}</h4>
+            <div class="rating">
+              average user rating: ${replace.rating}
+            </div>
+          </div>
+        </div>
+      </div>`,
+    profile: () => ``,
+    pagination: (replace) =>
+      `<a class="prev" href="#">&lt;</a>   ${replace.page} of ${replace.total}  <a class="next" href="#">&gt;</a>`
+  },
+  author: {
+    profile: () => ``,
+    list: () => ``
+  },
+  error: () =>
+    `<h2>There was an error processing your request. Feel free to reach out our administrators at XXXXX. We apologize for the inconvenience.</h2>`,
+  noResults: () =>
+    `<h2>There are no results for your search, or there was a problem with your request. Please try again using different search terms.`
+};
+
+const dom = {
+  book: document.querySelector(".book"),
+  dropdown: document.querySelector(".dropdown"),
+  dropdownButton: document.querySelector("dropdownButton"),
+  dropdownOptions: document.querySelectorAll(".dropdown-content"),
+  search: document.querySelector("#search"),
+  searchInput: document.querySelector("#searchInput"),
+  searchSubmit: document.querySelector("#searchSubmit"),
+  placeholder: document.querySelector("#placeholder"),
+  pagination: document.querySelector("#pagination")
+};
+
+const listeners = (theView) => ({
+  pagination(e) {
+    if (e.target.className !== "next" && e.target.className !== "prev") return;
+    e.preventDefault();
+    let prevNext =
+      e.target.className === "next" || e.target.className === "prev"
+        ? e.target.className
+        : undefined;
+    let page =
+      prevNext === "next"
+        ? theView.metaData.page + 1
+        : theView.metaData.page - 1;
+
+    if (page === 0) page = 1;
+    if (page > theView.metaData.totalResults) {
+      page = page - 1;
+    }
+    theView.metaData.page = page;
+    let params = { ...theView.params, page };
+    View.storage.set("session", params);
+    theView.factory.getProfiles(params).then((newResults) => {
+      if (newResults.error) {
+        theView.placeholder = template.error();
+        theView.list = [];
+      } else if (!newResults || !newResults.length) {
+        theView.placeholder = template.noResults();
+        theView.list = [];
+      } else theView.children = newResults;
+      theView.params = params;
+      theView.html.pagination.vars = {
+        page,
+        total: theView.factory.metaData.totalResults
+      };
+      theView.execute();
+    });
+  },
+  searchSubmit(e) {
+    e.preventDefault();
+    document.querySelector("#books").scrollIntoView({
+      behavior: "smooth"
+    });
+    let searchTerm = dom.searchInput.value;
+    let params = { search: searchBy, q: searchTerm };
+    View.storage.set("session", params);
+    return restoreFromParams(params);
+  },
+  dropDown(event) {
+    if (!event.target.matches(".dropdownButton")) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
+        }
+      }
+    }
+  }
+});
+
+/* in a multipage setup these would be our exports */
+module.exports = { dom, template, listeners };
