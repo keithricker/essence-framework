@@ -1,9 +1,9 @@
 # essence-framework
 An API-based front-end JS framework inspired by ViewJS and React
 
-The main purpose of Essense is to simplify the creation of API-based applications. Displaying retreived records as a list, grid, etc. The View layer is made up of *templates* and *properties,* and includes basic state management; i.e. templates that use stateful properties are re-rendered when those properties change.
+The main purpose of Essense is to simplify the creation of API-based applications. Displaying retreived records as a list, grid, etc. The View layer is made up of *templates* and *properties,* and includes basic state management; i.e. templates that use stateful properties are re-rendered when those properties change. It is inspired by ViewJS in the sense that a lot more of your work will be done in the .html files, whereas with React, more of your time will be spent in the .js files. At the same time, it borrows heavily from Reacts's use of components and state management.
 
-Documentation is provided below. For illustrative purposes, I am using books and authors.
+Documentation is provided below. For illustrative purposes, I'm using *books* and *authors*.
 
 Some key terms:
 
@@ -72,7 +72,6 @@ Example:
    }</i>  
   <br />
  
-
 The view's ***execute*** function will go about rendering each record using the supplied html template and attaching them to the dom. You can also supply it with a callback function/hook that it will run in case there are any additional things you want done during excecution. It's "this" is a reference to the View with some limitations.
 
 ### Caching (persistence): 
