@@ -35,7 +35,7 @@ The method needs to be named "getProfiles", and it needs to accept filtering opt
 
 #### Example Template:
 
-sample record: *{ title:"TomSawyer", author:"Mark Twain" }*  
+sample record: * let record = { title:"TomSawyer", author:"Mark Twain" }*  
   
   
 <i>let template = (record) => {  
@@ -59,7 +59,7 @@ Example:
   </i>
   <br>
   #### And the props we pass in:
-  <i>{  
+  <i>let record = {  
      &nbsp;&nbsp;title:"TomSawyer,   
      &nbsp;&nbsp;author:"Mark Twain"  
      &nbsp;&nbsp;more: (child) => {  
