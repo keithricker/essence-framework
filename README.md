@@ -39,7 +39,7 @@ sample record: *let record = { title:"TomSawyer", author:"Mark Twain" }*
   
   
 > <i>let template = (record) => {  
-    &nbsp;&nbsp;return \`&lt;h2&gt;${record.title}&lt;/h2&gt;  
+    &nbsp;&nbsp;return \`&lt;h2&gt;${record.title}&lt;/h2&gt;<br />
     &nbsp;&nbsp;&lt;div&gt;by: ${record.author}&lt;/div&gt;\`  
 }  
 </i>
