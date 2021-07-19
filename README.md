@@ -50,11 +50,11 @@ When you see records and properties as shown above, think **state** in react.
 
 Example:  
   > <i>
-    <br />let template = (record) => {
-    <br />&nbsp;&nbsp;return \`&lt;h2&gt;${record.title}&lt;/h2&gt;
-    <br />&nbsp;&nbsp;&lt;div&gt;by: ${record.author}&lt;/div&gt;
-    <br />&nbsp;&nbsp;&lt;div&gt;More titles:&lt;div&gt;
-    <br />&nbsp;&nbsp;${record.more}
+    let template = (record) => {
+    &nbsp;&nbsp;return \`&lt;h2&gt;${record.title}&lt;/h2&gt;
+    &nbsp;&nbsp;&lt;div&gt;by: ${record.author}&lt;/div&gt;
+    &nbsp;&nbsp;&lt;div&gt;More titles:&lt;div&gt;
+    &nbsp;&nbsp;${record.more}
 <br />}
   </i>
   <br>
