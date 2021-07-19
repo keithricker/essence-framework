@@ -1,7 +1,7 @@
 # essence-framework
 An API-based front-end JS framework inspired by ViewJS and React
 
-[View an example project using the framework](https://codesandbox.io/s/gallant-https-f8qre?file=/src/index.js)
+[View an example project using the framework (code sandbox)](https://codesandbox.io/s/gallant-https-f8qre?file=/src/index.js)
 
 The main purpose of Essense is to simplify the creation of API-based applications. Displaying retreived records as a list, grid, etc. The View layer is made up of *templates* and *properties,* and includes basic state management; i.e. templates that use stateful properties are re-rendered when those properties change. It is inspired by ViewJS in the sense that a lot more of your work will be done in the .html files, whereas with React, more of your time will be spent in the .js files. At the same time, it borrows heavily from Reacts's use of components and state management.
 
