@@ -56,8 +56,7 @@ Example:
     &nbsp;&nbsp;&lt;div&gt;More titles:&lt;div&gt;  
     &nbsp;&nbsp;${record.more}  
 }  
-</i>
-<br />
+</i>  
 
   #### And the fields we pass in:  
   > <i>let record = {  
