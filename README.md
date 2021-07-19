@@ -53,7 +53,7 @@ Example:
     <br />&nbsp;&nbsp;return \`&lt;h2&gt;${record.title}&lt;/h2&gt;
     <br />&nbsp;&nbsp;&lt;div&gt;by: ${record.author}&lt;/div&gt;
     <br />&nbsp;&nbsp;&lt;div&gt;More titles:&lt;div&gt;
-    <br />&nbsp;&nbsp;${more}
+    <br />&nbsp;&nbsp;${record.more}
 <br />}
   </i>
   <br>
