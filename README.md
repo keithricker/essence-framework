@@ -49,7 +49,7 @@ When you see records and properties as shown above, think **state** in react.
 #### Similar to React, you can also pass in child components (templates within templates).
 
 Example:  
-  <i>
+  > <i>
     <br />let template = (record) => {
     <br />&nbsp;&nbsp;return \`&lt;h2&gt;${record.title}&lt;/h2&gt;
     <br />&nbsp;&nbsp;&lt;div&gt;by: ${record.author}&lt;/div&gt;
@@ -58,8 +58,9 @@ Example:
 <br />}
   </i>
   <br>
+  
   #### And the fields we pass in:
-  <i>let record = {  
+  > <i>let record = {  
      &nbsp;&nbsp;title: "TomSawyer,   
      &nbsp;&nbsp;author: "Mark Twain",    
      &nbsp;&nbsp;more: <strong>(child) => {  
@@ -79,7 +80,7 @@ The view instance has a session object that keeps track of persistence. The Sess
 
 ### html:
 A simplified helper for inserting html in to the dom. An object of key/value pairs. i.e. 
-<br />{ 
+> <br />{ 
 <br />&nbsp;&nbsp;title: "&lt;h2&gt;Moby Dick&lt;/h2&gt;", 
 <br />&nbsp;&nbsp;image: '&lt;img src="http://wailimage.jpg" /&gt;'
 <br />}
