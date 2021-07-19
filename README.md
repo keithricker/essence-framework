@@ -52,9 +52,9 @@ Example:
 
 > <i>let template = (record) => {  
     &nbsp;&nbsp;return \`&lt;h2&gt;${record.title}&lt;/h2&gt;
-    &nbsp;&nbsp;&lt;div&gt;by: ${record.author}&lt;/div&gt;
-    &nbsp;&nbsp;&lt;div&gt;More titles:&lt;div&gt;
-    &nbsp;&nbsp;${record.more}
+    &nbsp;&nbsp;&lt;div&gt;by: ${record.author}&lt;/div&gt;  
+    &nbsp;&nbsp;&lt;div&gt;More titles:&lt;div&gt;  
+    &nbsp;&nbsp;${record.more}  
 }  
 </i>
 <br />
