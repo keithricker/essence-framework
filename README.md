@@ -36,7 +36,8 @@ The method needs to be named "getProfiles", and it needs to accept filtering opt
 #### Example Template:
 
 sample record: *{ title:"TomSawyer", author:"Mark Twain" }*  
-    let template = (record) => {  
+  
+let template = (record) => {  
     &nbsp;&nbsp;return \`&lt;h2&gt;${record.title}&lt;/h2&gt;  
     &nbsp;&nbsp;&lt;div&gt;by: ${record.author}&lt;/div&gt;\`  
 }  
