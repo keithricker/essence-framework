@@ -19,7 +19,7 @@ Some key terms:
 
 
 ## The View Class: 
-- Arguments: 
+***Arguments:*** 
 1. A factory class for retreiving the desired records,
 2. Config object: key/value pairs (optional). 
 
