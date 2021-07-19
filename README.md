@@ -73,7 +73,7 @@ Example:
   <br />
  
 
-The view's ***execute*** function will go about rendering each record using the supplied html template and attaching them to the dom. You can also supply it with a callback funciton/hook that it will run in case there are any additional things you want done during excecution. It's "this" is a reference to the View with some limitations.
+The view's ***execute*** function will go about rendering each record using the supplied html template and attaching them to the dom. You can also supply it with a callback function/hook that it will run in case there are any additional things you want done during excecution. It's "this" is a reference to the View with some limitations.
 
 ### Caching (persistence): 
 The view object has a session object that keeps track of persistence. The Session.save() method (i.e. bookView.session.save), will save whatever parameters are used to produce the given query results; i.e. whatever params are sent to the API, etc. This allows for the app to have memory of whatever the user happened to be viewing last. It uses window's local storage, so it may not work in non-supporting browsers, in incognito mode, or if users have it disabled.
