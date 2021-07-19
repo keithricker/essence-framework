@@ -60,8 +60,8 @@ Example:
   <br>
   #### And the props we pass in:
   <i>let record = {  
-     &nbsp;&nbsp;title:"TomSawyer,   
-     &nbsp;&nbsp;author:"Mark Twain"  
+     &nbsp;&nbsp;title: "TomSawyer,   
+     &nbsp;&nbsp;author: "Mark Twain",    
      &nbsp;&nbsp;more: (child) => {  
        &nbsp;&nbsp;&nbsp;&nbsp;return <strong>\`\<ul\>  
          &nbsp;&nbsp;&nbsp;&nbsp;\<li\>child.titles[0]\</li\>  
