@@ -1,0 +1,388 @@
+#book-list {
+  opacity: 0;
+  transition: all 0.4s;
+}
+ul,
+li {
+  list-style-type: none;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+button {
+  border-radius: 0;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.2rem 0.7rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.rounded-pill {
+  border-radius: 50rem !important;
+}
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+#book-search-wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.inputs {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+@media only screen and (max-width: 576px) {
+  .inputs {
+    width: 100%;
+  }
+}
+#searchInput {
+  width: 100%;
+  text-align: center;
+}
+.inputs {
+  margin: auto;
+}
+.book.col-sm-4 {
+  margin: 0.3em;
+  padding-top: 0px;
+  padding-bottom: 0px !important;
+}
+.book.[class*="col-"],
+.book [class*="col-"] {
+  padding: 0.3em !important;
+}
+.book [class*="col-"] {
+  border: none;
+}
+.book .col-9 {
+  padding-left: 0.6em !important;
+}
+.book .col-3 {
+  padding-right: 0px !important;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+.mb-4,
+.my-4 {
+  margin-bottom: 1.5rem !important;
+}
+.mb-4,
+.my-4 {
+  margin-bottom: 1.5rem !important;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.rounded {
+  border-radius: 0.25rem !important;
+}
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.p-5 {
+  padding: 1.5rem !important;
+}
+#exampleFormControlInput5 {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+#search {
+  width: 100%;
+}
+.form-control-underlined {
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+.mb-4,
+.my-4 {
+  margin-bottom: 1.5rem !important;
+}
+[class*="col-"] {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid rgba(86, 61, 124, 0.2);
+}
+@media only screen and (min-width: 576px) {
+  .col-sm-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 31.5%;
+    flex: 0 0 31.5%;
+    max-width: 31.5%;
+  }
+}
+.col-8 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+.col-4 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+.col-3 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.col-9 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 70%;
+  flex: 0 0 65%;
+  max-width: 65%;
+}
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+h1.title {
+  text-align: center;
+  font-family: Sintony;
+  font-size: 3.2em;
+}
+.book h4.title {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-bottom: 5px;
+  line-height: 15px;
+  color: #333;
+  font-size: 103%;
+}
+.book [class*="col-"] div {
+  margin-bottom: 5px;
+}
+.book img {
+  width: 100%;
+}
+
+/* Dropdown Button */
+.dropdownButton {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Dropdown button on hover & focus */
+.dropdownButton:hover,
+.dropdownButton:focus {
+  background-color: #2980b9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
+}
+
+.dropdown-content {
+  height: 0px;
+  position: absolute;
+  opacity: 0;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  height: initial;
+  opacity: 1;
+  transition: opacity 0.15s;
+}
+.body {
+  margin: 15px;
+}
+#book-list {
+  margin-top: 20px;
+  margin-right: -20px;
+}
+@media only screen and (min-width: 768px) {
+  #book-list {
+    margin-right: -40px;
+  }
+}
+#placeholder,
+#pagination {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#placeholder a,
+#pagination a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #0291c8;
+}
+#placeholder a:hover {
+  color: #19bcf9;
+}
+#pagination a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
