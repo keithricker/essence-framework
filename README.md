@@ -5,7 +5,7 @@ The main purpose of Essense is to simplify the creation of API-based application
 
 Documentation is provided below. For illustrative purposes, I'm using *books* and *authors* to show how it handles sets (lists) of data.
 
-Some key terms:
+#### Some key terms:
 
 - <strong>View:</strong> A single instance of the framework. Generally speaking this will be the application, although multiple Views can certainly be employed; usually for different sections of an SPA (single page application).
 - <strong>Profile:</strong> An individual record or instance retreived from the API. The "li" within the "ul", to borrow an htm term. 
