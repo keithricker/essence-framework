@@ -88,7 +88,7 @@ A simplified helper for inserting html in to the dom. An object of key/value pai
 And it will add the title's value as it's innerHTML (same with data-html="image"), resulting in:
 <br />
 <br /><i>&lt;div <strong>data-html="title"</strong>&gt;&lt;h2&gt;Moby Dick&lt;/h2&gt;&lt;/div&gt;</i>  
-<i>&lt;div <strong>data-html="image"</strong>&gt;&lt;img src="http://wailimage.jpg" /&gt;</i>  
+<i>&lt;div <strong>data-html="image"</strong>&gt;&lt;img src="http://wailimage.jpg" /&gt;&lt;/div&gt;</i>  
 
 **Properties passed to the template will be handled similar to how React handles state.**
 
