@@ -62,13 +62,13 @@ Example:
   <i>let record = {  
      &nbsp;&nbsp;title: "TomSawyer,   
      &nbsp;&nbsp;author: "Mark Twain",    
-     &nbsp;&nbsp;more: (child) => {  
-       &nbsp;&nbsp;&nbsp;&nbsp;return <strong>\`\<ul\>  
+     &nbsp;&nbsp;more: <strong>(child) => {  
+       &nbsp;&nbsp;&nbsp;&nbsp;return \`\<ul\>  
          &nbsp;&nbsp;&nbsp;&nbsp;\<li\>child.titles[0]\</li\>  
          &nbsp;&nbsp;&nbsp;&nbsp;\<li\>child.titles[1]\</li\>  
          &nbsp;&nbsp;&nbsp;&nbsp;\<li\>child.titles[2]\</li\>  
-       &nbsp;&nbsp;&nbsp;&nbsp;\</ul\>\`</strong>  
-     &nbsp;&nbsp;}  
+       &nbsp;&nbsp;&nbsp;&nbsp;\</ul\>\`  
+     &nbsp;&nbsp;}</strong>  
    }</i>  
   <br />
  
