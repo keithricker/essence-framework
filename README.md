@@ -85,9 +85,9 @@ A simplified helper for inserting html in to the dom. An object of key/value pai
 <br />&nbsp;&nbsp;image: '&lt;img src="http://wailimage.jpg" /&gt;'
 <br />}
 <br /><br />In the above example, the View will look for any dom elements matching: ***<data-html="title"***
-And it will add the title's value as it's innerHTML, resulting in:
-<p><i>&lt;div data-html="title"&gt;&lt;h2&gt;Moby Dick&lt;/h2&gt;&lt;/div&gt;</i></p>
-<p><i>&lt;div data-html="image"&gt;&lt;img src="http://wailimage.jpg" /&gt;</i></p>
+And it will add the title's value as it's innerHTML, resulting in:  
+<i>&lt;div data-html="title"&gt;&lt;h2&gt;Moby Dick&lt;/h2&gt;&lt;/div&gt;</i>  
+<i>&lt;div data-html="image"&gt;&lt;img src="http://wailimage.jpg" /&gt;</i>  
 
 **Properties passed to the template will be handled similar to how React handles state.**
 
