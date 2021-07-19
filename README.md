@@ -48,7 +48,7 @@ When you see records and properties as shown above, think **state** in react.
 
 #### Similar to React, you can also pass in child components (templates within templates).
 
-Example:
+Example:  
   <i>
     <br />let template = (record) => {
     <br />&nbsp;&nbsp;return \`&lt;h2&gt;${record.title}&lt;/h2&gt;
