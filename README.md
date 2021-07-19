@@ -63,7 +63,7 @@ Example:
      &nbsp;&nbsp;title:"TomSawyer,   
      &nbsp;&nbsp;author:"Mark Twain"  
      &nbsp;&nbsp;more: (child) => {  
-       &nbsp;&nbsp;&nbsp;&nbsp;return <strong>`\<ul\>  
+       &nbsp;&nbsp;&nbsp;&nbsp;return <strong>\`\<ul\>  
          &nbsp;&nbsp;&nbsp;&nbsp;\<li\>child.titles[0]\</li\>  
          &nbsp;&nbsp;&nbsp;&nbsp;\<li\>child.titles[1]\</li\>  
          &nbsp;&nbsp;&nbsp;&nbsp;\<li\>child.titles[2]\</li\>  
