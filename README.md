@@ -83,7 +83,9 @@ A simplified helper for inserting html in to the dom. An object of key/value pai
 <br />&nbsp;&nbsp;title: "&lt;h2&gt;Moby Dick&lt;/h2&gt;", 
 <br />&nbsp;&nbsp;image: '&lt;img src="http://wailimage.jpg" /&gt;'
 <br />}
-<br /><br />In the above example, the View will look for any dom elements matching: ***<data-html="title"***
+<br />
+
+In the above example, the View will look for any dom elements matching: ***<data-html="title"***
 And it will add the title's value as it's innerHTML (same with data-html="image"), resulting in:
 <br />
 <br /><i>&lt;div <strong>data-html="title"</strong>&gt;&lt;h2&gt;Moby Dick&lt;/h2&gt;&lt;/div&gt;</i>  
