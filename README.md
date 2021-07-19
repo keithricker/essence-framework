@@ -20,8 +20,8 @@ Some key terms:
 
 ## The View Class: 
 ***Arguments:*** 
-1. A factory class for retreiving the desired records,
-2. Config object: key/value pairs (optional). 
+1. *A factory class* (class) for retreiving the desired records,
+2. *Config object:* (object) key/value pairs (optional). 
 
 **The Factory:** just needs to be a class with a method that returns an array of records. Each record being an object with key/value pairs representing the data: i.e. { author:"JK Rowling", book: "Harry Potter" } 
 
