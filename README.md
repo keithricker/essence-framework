@@ -10,11 +10,11 @@ Some key terms:
 - <strong>View:</strong> A single instance of the framework. Generally speaking this will be the application, although multiple Views can certainly be employed; usually for different sections of an SPA (single page application).
 - <strong>Profile:</strong> An individual record or instance retreived from the API. The "li" within the "ul", to borrow an htm term. 
 - <strong>List:</strong> A set (array) of profiles.
-- <strong>View Factory:</strong> The base class that talks with the API. Used for retreiving records/profiles and passing them to the View. 
+- <strong>API Factory:</strong> The base class that talks with the API. Used for retreiving records/profiles and passing them to the View. 
 
 **A single instance of the framework (mostly) consists of:**
 1) **A View** (an instance of the View Class)
-2) A **Factory** (instance of the View Factory. Could also be a custom class that retreives records from an API)
+2) A **Factory** (instance of the API Factory. Could also be a custom class that retreives records from an API)
 3) A **Config object** (Contains all of the options for creating a View)
 
 
@@ -100,5 +100,4 @@ By default, the View will do a basic fadein/fadeout on the parent element when l
 - starting value (defaults to 0 for fade in)
 - time (defaults to .200s)
 To disable the animation altogether, you can set the view's animation property to ***false***
-
 
