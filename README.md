@@ -1,5 +1,5 @@
 # essence-framework
-An API-based front-end JS framework inspired by ViewJS and Angular
+An API-based front-end JS framework inspired by ViewJS and React
 
 The main purpose of Essense is to simplify the creation of API-based applications. Displaying retreived records as a list, grid, etc. The View layer is made up of *templates* and *properties,* and includes basic state management; i.e. templates that use stateful properties are re-rendered when those properties change.
 
