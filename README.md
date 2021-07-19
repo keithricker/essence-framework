@@ -59,15 +59,15 @@ Example:
   <br>
   #### And the props we pass in:
   <i>{  
-     title:"TomSawyer,   
-     author:"Mark Twain"  
-     more: (child) => {  
-       \<ul\>  
-         \<li\>child.titles[0]\</li\>  
-         \<li\>child.titles[1]\</li\>  
-         \<li\>child.titles[2]\</li\>  
-       \</ul\>  
-     }  
+     &nbsp;&nbsp;title:"TomSawyer,   
+     &nbsp;&nbsp;author:"Mark Twain"  
+     &nbsp;&nbsp;more: (child) => {  
+       &nbsp;&nbsp;&nbsp;&nbsp;\<ul\>  
+         &nbsp;&nbsp;&nbsp;&nbsp;\<li\>child.titles[0]\</li\>  
+         &nbsp;&nbsp;&nbsp;&nbsp;\<li\>child.titles[1]\</li\>  
+         &nbsp;&nbsp;&nbsp;&nbsp;\<li\>child.titles[2]\</li\>  
+       &nbsp;&nbsp;&nbsp;&nbsp;\</ul\>  
+     &nbsp;&nbsp;}  
    }</i>  
   <br />
  
